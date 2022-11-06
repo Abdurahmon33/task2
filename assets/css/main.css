@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.magazine {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products:hover {
+    box-shadow: 3px 10px 10px 10px gray;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.iconDelete {
+    margin-left: 220px;
+    color: red;
+}
+
+.products-img {
+    margin-bottom: 20px;
+    width: 233px;
+    height: 153px;
+}
+
+.products-img:hover {
+    box-shadow: 3px 1px 30px 10px rgb(255, 255, 255);
+
+}
+
+.products {
+    display: grid;
+    padding: 10px;
+    width: 261px;
+    height: 400px;
+    background-color: #D9D9D9;
+    margin: 10px;
+}
+
+
+.modal_wrapper {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.364);
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal {
+    position: relative;
+    height: 80px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+
+    transition: 0.5s;
+
+}
+
+.button__yas {
+    border: none;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: green;
+    position: absolute;
+    top: 40px;
+    bottom: 0px;
+    left: 20px;
+}
+
+
+
+.button__no {
+    background-color: red;
+    position: absolute;
+    border: none;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    top: 40px;
+    bottom: 0px;
+    left: 200px;
+}
